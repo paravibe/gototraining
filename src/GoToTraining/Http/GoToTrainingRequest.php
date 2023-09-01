@@ -22,6 +22,7 @@ class GoToTrainingRequest {
   protected $returnsStream;
   protected $sink;
   protected $urlQuery;
+  protected $headers;
 
   public function __construct($requestType, $endpoint, $accessToken, $baseUrl, $apiPrefix) {
     $this->requestType = $requestType;
