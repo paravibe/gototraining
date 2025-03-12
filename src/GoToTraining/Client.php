@@ -26,7 +26,7 @@ class Client {
     $this->values = array(
       'accountKey' => isset($values['account_key']) ? $values['account_key'] : NULL,
       'accountType' => isset($values['account_type']) ? $values['account_type'] : NULL,
-      'email' => isset($values['email']) ? $values['email'] : NULL,
+      'principal' => isset($values['principal']) ? $values['principal'] : NULL,
       'firstName' => isset($values['firstName']) ? $values['firstName'] : NULL,
       'lastName' => isset($values['lastName']) ? $values['lastName'] : NULL,
       'organizerKey' => isset($values['organizer_key']) ? $values['organizer_key'] : NULL,
