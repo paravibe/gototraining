@@ -17,9 +17,9 @@ class Client {
   protected $apiPrefix;
   protected $accessToken;
 
-  public function __construct($token, $values = array()) {
+  public function __construct($token, $values = [], $apiPrefix = GoToTrainingConstants::REST_API_PREFIX) {
     $this->baseUrl = GoToTrainingConstants::REST_API_ENDPOINT;
-    $this->apiPrefix = GoToTrainingConstants::REST_API_PREFIX;
+    $this->apiPrefix = $apiPrefix;
     $this->accessToken = $token;
 
     // Set additional values received after token request.
